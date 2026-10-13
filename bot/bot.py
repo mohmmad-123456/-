@@ -59,9 +59,9 @@ def handle(update, call, operator_id, owner_id, last_request):
 
 
 def main():
-    token = os.environ["TELEGRAM_BOT_TOKEN"]
-    operator_id = int(os.environ["OPERATOR_USER_ID"])
-    owner_id = int(os.environ["OWNER_USER_ID"])
+    token = os.environ["8647910126:AAFXHUAVgZPf8cV_A2zZtltiUQ6pNDSqCFM"]
+    operator_id = int(os.environ["8815460142"])
+    owner_id = int(os.environ["8815460142"])
     if operator_id <= 0 or owner_id <= 0:
         raise ValueError("Only private Telegram user IDs are allowed")
     call = lambda method, **params: api(token, method, **params)
